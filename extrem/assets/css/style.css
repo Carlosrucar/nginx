@@ -1,0 +1,575 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+  font-family: 'EduAUVICWANTOutline-Bold.ttf';
+  src: url('../fonts/EduAUVICWANTOutline-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-family: 'Rubik', serif;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: clamp(10px, 3vw + 10px, 20px) clamp(20px, 5vw, 40px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: transparent;
+}
+
+.logo {
+  font-size: clamp(18px, 2vw + 8px, 24px);
+  color: black;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.logo span {
+  color: red;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Navigation Styles */
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+  color: red;
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url('../img/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: clamp(50vh, 80vh, 100vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Overlay Styles */
+.overlay {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-left: clamp(-200px, -10vw, -400px);
+}
+
+.overlay h1 {
+  font-size: clamp(2rem, 4vw + 1rem, 4rem);
+  line-height: 1.2;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+.overlay h1 .line {
+  display: block;
+  margin: 10px 0;
+}
+
+.overlay h1 .line span {
+  color: black;
+}
+
+.overlay h1 .line:nth-child(2) span {
+  color: red;
+}
+
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: clamp(20px, 5vw, 40px);
+  gap: 20px;
+}
+
+.text-block {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-block h2 {
+  font-size: clamp(24px, 2vw + 1rem, 28px);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.outlined {
+  font-family: 'EduAUVICWANTOutline-Bold.ttf', sans-serif;
+  font-size: 1.4rem;
+}
+
+.highlight {
+  color: red;
+}
+
+.text-block p {
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: 1.5;
+  color: #333;
+  margin-top: 0px;
+}
+
+.image-block {
+  flex: 1 1 45%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.biking-image {
+  background-image: url('../img/1.jpg');
+}
+
+.mastery-image {
+  background-image: url('../img/3.jpg');
+  background-position: top;
+  background-size: cover;
+}
+
+/* Adventure Section Styles */
+.adventure-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: clamp(20px, 5vw, 60px) clamp(20px, 10vw, 40px);
+  gap: 20px;
+}
+
+.adventure-section h2 {
+  font-size: clamp(1.5rem, 2.5vw + 1rem, 2.5rem);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin-left: clamp(0px, 3vw, -250px);
+}
+
+.adventure-section .highlight {
+  color: red;
+}
+
+.adventure-text p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  max-width: 600px;
+  margin-top: 10px;
+}
+
+.adventure-flex-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.left-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.adventure-image-left {
+  height: 300px;
+  background-image: url('../img/4.jpg');
+  background-size: cover;
+  background-position: center;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.right-content {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adventure-image-right {
+  width: 100%;
+  height: clamp(200px, 15vw + 50px, 420px);
+  background-image: url('../img/7.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Image Gallery Styles */
+.image-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.image-gallery .left-gallery {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 10px;
+}
+
+.image-gallery .left-gallery .small-image {
+  height: 200px;
+  background-size: cover;
+  background-position: top;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.image-gallery .right-gallery {
+  flex: 1;
+  height: 620px;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+}
+
+.image-1 {
+  background-image: url('../img/horizontal1.jpg');
+}
+
+.image-2 {
+  background-image: url('../img/horizontal2.jpg');
+}
+
+.image-3 {
+  background-image: url('../img/horizontal3.jpg');
+}
+
+.large-image {
+  background-image: url('../img/2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.ride-wild {
+  position: relative;
+  width: 100%;
+  height: 130vh;
+  overflow: hidden;
+}
+
+/* Background Image */
+.background-image {
+  background-image: url('../img/fototexto.jpeg');
+  background-size: cover;
+  background-position: top;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 80px;
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: clamp(28px, 3vw, 36px);
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+
+.section-description {
+  font-size: clamp(16px, 2vw, 18px);
+  font-family: 'Roboto', sans-serif;
+  margin-left: 20px;
+}
+
+.columns {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.column-description {
+  font-size: clamp(14px, 1.5vw, 16px);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #ffffff;
+  padding: clamp(10px, 2vw, 20px) 0;
+  margin: 0;
+  width: 100%;
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-info,
+.social-media,
+.quick-links,
+.newsletter {
+  flex: 1 1 25%; 
+  text-align: center;
+  margin: 10px 0; 
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.quick-links, .newsletter {
+  text-align: center;
+}
+
+.quick-links h4, .newsletter h4 {
+  margin-bottom: 10px;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin: 5px 0;
+}
+
+.quick-links a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+.quick-links a:hover {
+  text-decoration: underline;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter input {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.newsletter button {
+  padding: 10px;
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.newsletter button:hover {
+  background-color: #cc0000;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .overlay h1 {
+    font-size: clamp(30px, 5vw + 5px, 50px);
+  }
+
+  .content-section {
+    padding: 20px;
+  }
+
+  .text-block, .image-block {
+    flex: 1 1 100%;
+  }
+
+  .adventure-section h2 {
+    margin-left: 0;
+    font-size: clamp(20px, 4vw + 5px, 28px);
+  }
+}
+
+@media (max-width: 992px) {
+  nav {
+    justify-content: center;
+  }
+
+  nav a {
+    font-size: clamp(10px, 2vw + 2px, 12px);
+    margin: 0 5px;
+  }
+
+  .hero {
+    height: 70vh;
+  }
+
+  .overlay h1 {
+    font-size: clamp(30px, 5vw + 5px, 40px);
+  }
+
+  .adventure-section h2 {
+    font-size: clamp(22px, 4vw + 3px, 28px);
+  }
+
+  .adventure-flex-container {
+    flex-direction: column;
+  }
+
+  .left-content, .right-content {
+    flex: 1 1 100%;
+  }
+
+  .adventure-image-right {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    margin-left: 0;
+  }
+
+  .overlay h1 {
+    font-size: clamp(24px, 4vw + 2px, 32px);
+  }
+
+  .content-section {
+    padding: 10px;
+  }
+
+  .text-block h2 {
+    font-size: clamp(20px, 4vw + 2px, 24px);
+  }
+
+  .text-block p {
+    font-size: clamp(12px, 2vw + 2px, 14px);
+  }
+
+  .adventure-section h2 {
+    font-size: clamp(20px, 4vw + 2px, 24px);
+  }
+
+  .section-title {
+    font-size: clamp(22px, 4vw + 2px, 28px);
+  }
+
+  .section-description {
+    font-size: clamp(14px, 2vw + 2px, 16px);
+  }
+
+  footer {
+    padding: 10px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quick-links, .newsletter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  header {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: clamp(18px, 3vw + 2px, 20px);
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: clamp(8px, 2vw + 2px, 10px);
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .overlay h1 {
+    font-size: clamp(24px, 4vw + 2px, 28px);
+  }
+
+  .image-block {
+    height: 200px;
+  }
+
+  .adventure-image-right {
+    height: 200px;
+  }
+
+  .newsletter input {
+    font-size: clamp(12px, 2vw + 2px, 14px);
+  }
+
+  .newsletter button {
+    font-size: clamp(12px, 2vw + 2px, 14px);
+  }
+}
+

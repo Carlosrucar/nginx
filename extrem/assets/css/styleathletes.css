@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+  font-family: 'EduAUVICWANTOutline-Bold.ttf';
+  src: url('../fonts/EduAUVICWANTOutline-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Catamaran', sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: clamp(20px, 2.5vw + 5px, 24px);
+  color: black;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation Styles */
+.logo span {
+  color: red;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: clamp(12px, 1.5vw + 2px, 14px);
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+  color: red;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('../img/athletes.jpg');
+  background-size: cover;
+  background-position: top;
+  height: 80vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay {
+  text-align: center;
+  color: white;
+  margin-left: -400px;
+}
+
+.overlay h1 {
+  font-size: clamp(32px, 5vw + 5px, 50px);
+  line-height: 1.2;
+  font-family: 'Catamaran', sans-serif;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 40px;
+}
+
+.overlay h1 .line {
+  display: block;
+  margin: 10px 0;
+}
+
+.overlay h1 .highlight {
+  color: red;
+  margin-left: 70px;
+}
+
+.overlay h1 .riders {
+  font-size: clamp(35px, 4vw + 5px, 45px);
+}
+
+/* Info Section */
+.info-section {
+    padding: clamp(20px, 5vw + 10px, 50px) 20px;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.image-box {
+    background-image: url('../img/image1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    margin-bottom: 0;
+}
+
+.column1 .image-box {
+    background-image: url('../img/Julien Absalon.jpg');
+}
+
+.column2 .image-box {
+    background-image: url('../img/Nino Schurter.jpg');
+}
+
+.column3 .image-box {
+    background-image: url('../img/Pauline Ferrand-Prévot.jpeg');
+}
+
+.info-button {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    margin: -25px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.info-box {
+    background-color: #e0e0e0;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 200px;
+    margin-top: 0;
+}
+
+/* Athletes Section */
+.athletes {
+    width: 100%;
+    padding: clamp(30px, 5vw + 10px, 50px) 20px;
+    background-color: #f9f9f9;
+}
+
+.athletes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.athletes-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.athletes-header h1 {
+    font-size: clamp(1.8rem, 3vw + 5px, 2.5rem);
+}
+
+.athlete {
+  display: flex;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  align-items: center;
+  gap: 20px;
+}
+
+/* About Section */
+.about-photo {
+  flex: 3;
+  max-width: 300px;
+  height: auto;
+}
+
+.about-text {
+  flex: 8;
+  padding: 20px;
+}
+
+.about-pic {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: block;
+}
+
+.title {
+    font-size: clamp(1.5rem, 3vw + 5px, 2rem);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.subtitle {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.julien .about-pic {
+    margin-top: 5%;
+    background-image: url('../img/juleninfo.jpg');
+}
+
+.nino .about-pic {
+    margin-top: 5%;
+    background-image: url('../img/Nino\ Schurter\ infojpg.jpg');
+}
+
+.pauline .about-pic {
+    margin-top: 5%;
+    background-image: url('../img/Pauline\ Ferrand-Prévot\ info.jpeg');
+}
+
+.team-photo {
+  flex: 4;
+  width: 300px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-left: 20px;
+  height: 200px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+}
+
+.about-text {
+  flex: 6;
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.julien .team-photo {
+  margin-top: 3%;
+  background-image: url('../img/equipo\ julen.jpeg');
+}
+
+.nino .team-photo {
+  margin-top: 3%;
+  background-image: url('../img/equiponino.jpeg');
+}
+
+.pauline .team-photo {
+  margin-top: 3%;
+  background-image: url('../img/equipoPauline\ Ferrand-Prévot.jpg');
+}
+
+/* Image Section */
+.image-section {
+  margin-top: 5%;
+  background-image: url('../img/diagonal.jpg');
+  background-size: cover;
+  background-position: center top;
+  height: clamp(40vh, 60vh, 60vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Footer Section */
+footer {
+  background-color: #ffffff;
+  padding: 20px 0;
+  margin: 0; 
+  width: 100%; 
+}
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-info,
+.social-media,
+.quick-links,
+.newsletter {
+  flex: 1 1 25%; 
+  text-align: center;
+  margin: 10px 0; 
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.quick-links, .newsletter {
+  text-align: center;
+}
+
+.quick-links h4, .newsletter h4 {
+  margin-bottom: 10px;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin: 5px 0;
+}
+
+.quick-links a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+.quick-links a:hover {
+  text-decoration: underline;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter input {
+  padding: 10px;
+  border: 1px solid #dddddd;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.newsletter button {
+  padding: 10px;
+  border: none;
+  background-color: #ff0000;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.newsletter button:hover {
+  background-color: #cc0000;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+  .container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .column {
+    margin: 20px 0;
+  }
+
+  .info-button {
+    margin-top: 10px;
+  }
+
+  .athlete {
+    flex-direction: column;
+  }
+
+  .about-photo, .team-photo {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: clamp(16px, 2vw + 2px, 20px);
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 20px; 
+  }
+
+  .overlay h1 {
+    font-size: clamp(30px, 4vw + 5px, 40px);
+    margin-left: 20px;
+  }
+
+  .overlay h1 .highlight {
+    margin-left: 30px;
+  }
+
+  .info-section, .athletes {
+    padding: clamp(15px, 3vw + 5px, 30px) 10px;
+  }
+
+  .team-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-text {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .overlay h1 {
+    font-size: clamp(24px, 4vw + 5px, 30px);
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .athlete {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-section {
+    padding: 20px;
+  }
+
+  .image-section {
+    height: clamp(30vh, 40vh, 60vh);
+  }
+
+  footer {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter input, .newsletter button {
+    width: 100%;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 50vh;
+  }
+
+  .overlay h1 {
+    font-size: clamp(18px, 3vw + 5px, 24px);
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .info-section {
+    padding: 10px;
+  }
+
+  .about-photo, .team-photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-container {
+    text-align: center;
+  }
+
+  .quick-links, .newsletter {
+    text-align: center;
+  }
+
+  .newsletter input, .newsletter button {
+    width: 90%;
+    padding: 8px;
+    margin: auto;
+  }
+
+  .info-button {
+    font-size: clamp(12px, 1.5vw + 2px, 14px);
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header, .overlay h1 {
+    font-size: clamp(16px, 2vw + 2px, 18px);
+  }
+
+  .logo {
+    font-size: clamp(16px, 2vw + 2px, 18px);
+  }
+
+  .overlay h1 {
+    font-size: clamp(20px, 3vw + 5px, 24px);
+    margin-left: 10px;
+  }
+
+  .info-section {
+    padding: 10px;
+  }
+
+  .athletes-header h1 {
+    font-size: clamp(1.6rem, 3vw + 5px, 1.8rem);
+  }
+
+  .newsletter input, .newsletter button {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
