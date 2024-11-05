@@ -1,5 +1,4 @@
 Vagrant.configure("2") do |config|
-  config.vbguest.auto_update = false
   config.vm.define "nginx_server" do |nginx|
     nginx.vm.hostname = "nginx-server"
     nginx.vm.box = "debian/bookworm64"
