@@ -33,6 +33,8 @@
     sudo chown vagrant:vagrant /home/carlos/ftp
     sudo chmod 755 /home/carlos/ftp
 
+    cp /vagrant/vsftpd.conf /etc/vsftpd.conf
+
     # Crear los certificados de seguridad
     sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.key -out /etc/ssl/certs/vsftpd.crt
 
