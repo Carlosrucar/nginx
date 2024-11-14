@@ -42,3 +42,7 @@ Este proyecto configura un servidor web y un servidor FTP utilizando Nginx y vsf
 ## Conclusión
 
 En esta práctica, hemos configurado un servidor web y un servidor FTP en una máquina virtual utilizando Vagrant. Se han realizado todas las configuraciones necesarias para asegurar el correcto funcionamiento de ambos servicios.
+
+## Respuestas a las preguntas
+
+![Respuestas a las preguntas](./Respuestas.png)
