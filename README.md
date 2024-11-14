@@ -21,7 +21,7 @@ Este proyecto configura un servidor web y un servidor FTP utilizando Nginx y vsf
    - Se asignaron los permisos adecuados a la carpeta del sitio web.
    - Se configuró Nginx para servir el sitio web.
 
-   ![Página extremweb](./Paginamia.png)
+   ![Página extremweb](./PaginaMia.png)
 
 4. **Configuración de FTP**
    - Se creó el usuario `carlos` y se le asignó una contraseña.
